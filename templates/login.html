@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login JWT</title></head>
+<body>
+  <h2>Connexion</h2>
+  <form method="POST">
+    <input type="text" name="username" placeholder="Nom d'utilisateur"><br><br>
+    <input type="password" name="password" placeholder="Mot de passe"><br><br>
+    <input type="submit" value="Connexion">
+  </form>
+
+  {% if message %}
+    <p><strong>{{ message }}</strong></p>
+  {% endif %}
+</body>
+</html>
