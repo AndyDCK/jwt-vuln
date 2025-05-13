@@ -51,7 +51,7 @@ def dashboard():
         )
         user = payload.get("user", "")
         if user == "admin":
-            return "<h1>Bienvenue admin ! FLAG-XYZ-123</h1>"
+            return "<h1>Bienvenue admin ! FLAG{jwt_authentication_broken}</h1>"
         return f"<h1>Bienvenue {user}</h1>"
     except Exception as e:
         return f"Token invalide: {e}", 403
